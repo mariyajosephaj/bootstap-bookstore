@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Store</title>
+  <!-- bootsrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fuid">
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="#">
+          <img src="./images/book-logo.png" class="img-fluid" height="70px" width="125px" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-5 pe-5 fw-bolder fst-italic mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">New Arrivals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Best Sellers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Today's Deal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Buy a Book</a>
+            </li>
+
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <!-- carousel -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"  >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="images/carousel3.jpg" class="d-block w-100 img-fluid"  alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="text-dark">Books are a uniquely portable magic...</h1>
+           
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./images/carousel4.jpg" class="d-block w-100 img-fluid"  alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- contant -->
+    <h1 class="text-center fst-italic fw-bolder mb-5 mt-5">New Arrivals</h1>
+    <div class="d-lg-flex justify-content-evenly align-items-center mt-5 mb-5">
+      <div class="card shadow" class="mb-5" style="width: 18rem;">
+        <img src="https://i.pinimg.com/736x/02/68/cf/0268cfd46ddad318018f6df24e8aef92.jpg" width="200px" height="300px"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Name : Wings Of Fire</h5>
+          <p class="card-text text-center">Author : Dr.Apj Abthulkalam</p>
+          
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            See More
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Book Name : Wings Of Fire</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h6>Author : Dr.Apj Abthulkalam</h6>
+                  <p>Wings of Fire is a memoir by A.P.J. Abdul Kalam, the former President of India. It tells the story of his inspiring journey from a small town to becoming a renowned scientist, providing valuable life lessons and insights along the way.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <a href="https://www.amazon.in/s?k=wings+of+fire&i=stripbooks&crid=2YS4LU1TI7N9Q&sprefix=wi%2Cstripbooks%2C274&ref=nb_sb_ss_pltr-data-refreshed_2_2"><button type="button" class="btn btn-primary">Buy Now</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card shadow" class="mb-5" style="width: 18rem;">
+        <img src="https://m.media-amazon.com/images/I/71VOI-r3IKL._AC_UF1000,1000_QL80_.jpg" width="200px"
+          height="300px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Name : My Journey</h5>
+          <p class="card-text text-center">Author : Dr.Apj Abthulkalam</p>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            See More
+          </button>
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Book Name : My Journey</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h6>Author : Dr.Apj Abthulkalam</h6>
+                  <p>My Journey: Transforming Dreams Into Actions is the life story of India's eleventh President, Dr. A. P. J. Abdul Kalam, who started off as an insignificant little boy Rameswaram, but ended up becoming the President of the country, besides being a brilliant scientist as well. </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <a href="https://www.amazon.in/MY-JOURNEY-TRANSFORMING-DREAMS-ACTIONS/dp/8129124912"><button type="button" class="btn btn-primary">Buy Now</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card shadow" class="mb-5" style="width: 18rem;">
+        <img src="https://m.media-amazon.com/images/I/81y66NkOkpL._AC_UF1000,1000_QL80_.jpg" width="200px"
+          height="300px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Name : Ignited Minds</h5>
+          <p class="card-text text-center">Author : Dr.Apj Abthulkalam</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            See More
+          </button>
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Book Name : Ignited Minds</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h6>Author : Dr.Apj Abthulkalam</h6>
+                  <p>Ignited Minds is a book by Dr. APJ Abdul Kalam, the former President of India and also known as the Missile Man of India for his work in development of missiles and launch vehicles. In this book Dr. Kalam talks about his dream of developed India.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <a href="https://www.amazon.in/IGNITED-MINDS-P-Abdul-Kalam/dp/0143424122"><button type="button" class="btn btn-primary">Buy Now</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card shadow" class="mb-5" style="width: 18rem;">
+        <img src="https://m.media-amazon.com/images/I/61BYTC-ejoL._AC_UF1000,1000_QL80_.jpg" width="200px"
+          height="300px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Name : Believe in yourself</h5>
+          <p class="card-text text-center">Author : Joseph Murphy
+          </p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            See More
+          </button>
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Book Name : Believe in yourself</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h6>Author : Joseph Murphy</h6>
+                  <p>Believe in Yourself by Dr. Joseph Murphy, first published in 1955, shows you how the power of believing in yourself will help you achieve your dreams. He illustrates his points with wonderful stories about how inventors, writers, artists and entrepreneurs have used this power to reach the highest of heights</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <a href="https://www.amazon.in/Believe-Yourself-Dr-Joseph-Murphy/dp/8183225098"><button type="button" class="btn btn-primary">Buy Now</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    
+  </div>
+  <!-- footer -->
+  <div class="row mt-5 ms-5 me-5">
+    <div class="col-lg-4">
+        <h3>Book Store</h3>
+        <p class="text-secondary fs-5 lh-lg">Bookstore works to connect readers with independent booksellers all over the world.
+          ‍We believe local bookstores are essential community hubs that foster culture and a love of reading, and we're committed to helping them thrive.
+
+        </p>
+    </div>
+    <div class="col-6 col-lg-4">
+        <h4 class="text-secondary">Links</h4>
+        <p class="fs-5 lh-lg">About us <br>
+            Contact us <br>
+            New Arrivals <br>
+            Terms and condition</p>
+    </div>
+    <div class="col-6 col-lg-4">
+        <h4 class="text-secondary">Contact Us</h4>
+        <p class="fs-5 lh-lg">Phone : 1234567890<br>
+            
+            E-Mail :bookstore@gmail.com</p>
+    </div>
+   
+
+
+</div>
+  </div>
+
+</body>
+<!-- bootsrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>
